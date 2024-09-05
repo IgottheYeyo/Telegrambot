@@ -28,14 +28,14 @@ async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 def handle_response(text: str) -> str:
     processed: str = text.lower() #This will convert all the text to lowercase
     
-    if 'hello' in processed:
+    if 'Здравей' in processed:
         return 'Hey there'
     
-    if 'how are you' in processed:
-        return 'I am doing good'
+    if 'как се плаща' in processed:
+        return 'приемаме плащания само чрез крипто'
     
-    if 'how can i get your product' in processed:
-        return 'Please Suscribe for more information!'
+    if 'може ли линк за групаата' in processed:
+        return 'ПОСТАВИ линк за група!'
     
     return 'I do not understand what you wrote... '
 
